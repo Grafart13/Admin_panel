@@ -1,0 +1,50 @@
+h1 {
+  margin: 10px;
+  color: #4545aa;
+  position: relative;
+  margin: 5% 15%;
+}
+
+h1::before {
+  content: '';
+  position: absolute;
+  left: -70px;
+  width: 50px;
+  height: 70px;
+  background: blue;
+  transition: transform .3s ease-in;
+  will-change: transform;
+}
+
+h1:hover::before {
+  transform: translateX(-50px);
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+
+}
+.container {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  background: #aaa;
+  justify-self: center;
+}
+
+.container-item {
+  flex-grow: 1;
+  color: #fafafa;
+  padding: 10px;
+}
+
+nav {
+  width: 200px;
+  height: 100%;
+  color: #cccccc;
+}
+
+
